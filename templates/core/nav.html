@@ -1,51 +1,79 @@
-{% extends "base.html" %}
-{% block content %}
+ <!-- Main Footer -->
+ <footer class="main-footer">
+    <div class="auto-container">
+        <div class="widget-wrapper">
+            <div class="row">
+                <!-- Contact Widget -->
+                <div class="col-lg-3 col-md-6 contact-widget footer-widget">
+                    <h4 class="widget-title">Contact</h4>
+                    <ul>
+                        <li>Efab Estate <br> Lokogoma Abuja <br>no.197.</li>
+                        <li><a href="mailto:support@goodsoul.com">emmanuelnater@gmail.com </a></li>
+                    </ul>   
+                    <h3><a href="tel:+211456789">+211 456 789</a></h3>                 
+                </div>
+                <!-- About Widget -->
+                <div class="col-lg-3 col-md-6 about-widget footer-widget">
+                    <h4 class="widget-title">About</h4>
+                    <ul>
+                        <li><a href="#">Charity</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Trending News</a></li>
+                        <li><a href="#">Causes</a></li>
+                    </ul>                
+                </div>
+                <!-- Link Widget -->
+                <div class="col-lg-3 col-md-6 link-widget footer-widget">
+                    <h4 class="widget-title">Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Private Policies</a></li>
+                        <li><a href="#">Donate Now</a></li>
+                        <li><a href="#">Become a Volunteer</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>               
+                </div>
+                <!-- Newsletter Widget -->
+                <div class="col-lg-3 col-md-6 newsletter-widget footer-widget">
+                    <h4 class="widget-title">Newsletter</h4>
+                    <div class="text">Subscribe us and get latest news & <br>upcoming events.</div>
+                    <form action="#">
+                        <input type="email" placeholder="Emial Address...">
+                        <button class="submin-btn"><span class="flaticon-next"></span>Subscribe Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="left-content">
+                <div class="icon"><img src="{% static 'images/resource/logo-icon.png' %}" alt=""></div>
+                <div class="copyright-text"><a href="templateshub.net">NEL</a><a href="#">Technology.</a> <br>Designed By <a href="#">Levah.</a></div>
+            </div>
+            <div class="right-content">
+                <ul class="social-icon-three">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-skype"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-arrow"></span></div>
 
-
-<!DOCTYPE html> {% load static %}
-<html lang="en">
-
-<!-- Goodsoul_html/  20 Nov 2019 03:24:55 GMT -->
-<head>
-<meta charset="utf-8">
-<title>Goodsoul HTML Template</title>
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700&amp;display=swap" rel="stylesheet">
-
-<!-- Stylesheets -->
-<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-<link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet">
-<link href="{% static 'css/swiper.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/flaticon.css' %}" rel="stylesheet">
-<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-<link href="{% static 'css/animate.css' %}" rel="stylesheet">
-<link href="{% static 'css/custom-animate.css' %}" rel="stylesheet">
-<link href="{% static 'css/jquery.fancybox.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/owl.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
-<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
-</head>
-
-<body>
+<div id="donate-popup" class="donate-popup">
+    
+    <div class="popup-overlay"></div>
 
     <div class="donate-form-area">
         <div class="donate-form-wrapper">
-            <div class="close-donate theme-btn">
-                <!-- <span class="flaticon-close"></span> -->
-            </div>
+            <div class="close-donate theme-btn"><span class="flaticon-close"></span></div>
             <div class="sec-title text-center">
-                <h1>Donate us to achieve our goal</h1>
+                <h1>Donate us to achive our goal</h1>
                 <div class="text">Beguiled and demoralized by the charms of pleasure of the moment, so by desire, <br>that they cannot foresee.</div>
             </div>
 
@@ -118,27 +146,10 @@
                     </div>
                 </div>
             </form>
-        </div>         
+        </div>
+            
     </div>
+</div>
 
-<!-- JS -->
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/TweenMax.min.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/swiper.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/menu-nav-btn.js' %}"></script>
-<script src="{% static 'js/jquery-ui.js' %}"></script>
-<!-- Custom JS -->
-<script src="{% static 'js/script.js' %}"></script>
-
-</body>
-
-<!-- Goodsoul_html/  20 Nov 2019 03:26:36 GMT -->
-</html>
-
-{% endblock content %}
+</div>
+<!--End pagewrapper-->
