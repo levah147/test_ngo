@@ -98,7 +98,188 @@
      
   {% block contact %}{% endblock contact %}
 
+       <!-- Main Menu -->
+       <nav class="main-menu navbar-expand-xl navbar-dark">
+                                    
+        <div class="collapse navbar-collapse">
+            <ul class="navigation">
+                <li class="dropdown current"><a href="index-2.html">Home</a>
+                    <ul>
+                        <li><a href="index-2.html">Main Home</a></li>
+                        {% comment %} <li><a href="index-3.html">Volunteer Home</a></li> {% endcomment %}
+                        <li><a href="index-4.html">Charity Home</a></li>
+                        <li><a href="index-5.html">Ecology Home</a></li>
+                        <li><a href="index-6.html">Education Home</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Pages</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ’s</a></li>
+                        <li><a href="team.html">Meet Our Team</a></li>
+                        <li class="dropdown"><a href="#">Portfolio</a>
+                            <ul>
+                                <li><a href="portfolio-1.html">Style 01 - Grid View</a></li>
+                                <li><a href="portfolio-2.html">Style 02 - Grid View</a></li>
+                                <li><a href="portfolio-3.html">Style 01 - Masonry View</a></li>
+                                <li><a href="portfolio-4.html">Style 02 - Masonry View</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Shop</a>
+                            <ul>
+                                <li><a href="shop.html">Our Products</a></li>
+                                <li><a href="shop-single.html">Products Single</a></li>
+                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="account.html">My Account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Causes</a>
+                    <ul>
+                        <li><a href="causes-1.html">Style 01 - Grid View</a></li>
+                        <li><a href="causes-2.html">Style 02 - List View</a></li>
+                        <li><a href="causes-3.html">Style 01 - Carousel</a></li>
+                        <li><a href="cause-details.html">Single Cause</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Events</a>
+                    <ul>
+                        <li><a href="events-1.html">Events</a></li>
+                        <li><a href="event-details.html">Single Event</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Blog</a>
+                    <ul>
+                        <li><a href="blog.html">Classic Grid View</a></li>
+                        <li><a href="blog-fullwidth.html">Fullwidth Masonry</a></li>
+                        <li><a href="blog-list.html">List With Sidebar</a></li>
+                        <li><a href="blog-details.html">Single Post</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav><!-- Main Menu End-->
+</div>
+<!--Search Box-->
+<div class="search-box-outer">
+    <div class="dropdown">
+        <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+        <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+            <li class="panel-outer">
+                <div class="form-container">
+                    <form method="post" action="http://steelthemes.com/demo/html/Goodsoul_html/blog.html">
+                        <div class="form-group">
+                            <input type="search" name="field-name" value="" placeholder="Search...." required="">
+                            <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="cart-btn">
+    <div class="cart-icon"><span class="flaticon-bag"></span><span class="item-count">0</span></div>
+</div>
+<div class="navbar-btn-wrap">
+    <button class="anim-menu-btn">
+      <i class="flaticon-menu"></i>
+    </button>
+</div>
+<div class="link-btn">
+    <a href="#" class="theme-btn btn-style-one"><span>Donate Now</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--End Header Upper-->
 
+
+<!--End Header Upper-->
+<div class="sticky-header">
+<div class="auto-container">
+<div class="wrapper-box">
+<div class="logo-column">
+<div class="logo-box">
+    <div class="logo"><a href="index-2.html"><img src="{% static 'images/logo.png' %}" alt="" title=""></a></div>
+</div>
+</div>
+<div class="menu-column">
+<div class="nav-outer">
+    
+    <div class="nav-inner">
+
+        <!-- Main Menu -->
+        <nav class="main-menu navbar-expand-xl navbar-dark">
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navigation">
+                </ul>
+            </div>
+        </nav><!-- Main Menu End-->
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Mobile Menu  -->
+<div class="mobile-menu style-one">
+<div class="menu-box">
+<div class="logo"><a href="index-2.html"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+<!-- Main Menu -->
+<nav class="main-menu navbar-expand-xl navbar-dark">
+<div class="navbar-header">
+    <!-- Toggle Button -->      
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="flaticon-menu"></span>
+    </button>
+</div>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navigation">
+        
+    </ul>
+</div>
+</nav>
+<!-- Main Menu End-->
+<!--Search Box-->
+<div class="search-box-outer">
+<div class="dropdown">
+    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu4">
+        <li class="panel-outer">
+            <div class="form-container">
+                <form method="post" action="http://steelthemes.com/demo/html/Goodsoul_html/blog.html">
+                    <div class="form-group">
+                        <input type="search" name="field-name" value="" placeholder="Search...." required="">
+                        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                    </div>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>     
+
+</div>
+<!-- End Mobile Menu -->
+
+<div class="nav-overlay">
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+</div>
+</header>
+<!-- End Main Header -->
 
     <!-- Main Footer -->
     <footer class="main-footer">
